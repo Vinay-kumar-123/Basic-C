@@ -1,7 +1,16 @@
-#include <stdio.h>
-int main(void){
-    int a[4] = {2,7,11,15};
-    int sum=0;
-    sum = a[0]+a[1];
-    printf("sum of two number is:%d" , sum);
+#include<stdio.h>
+int main(){
+  int n,i,j,count = 1;
+  printf("enter integer two row:");
+  scanf("%d",&n);
+  for(i=1;i<=n;i++){
+    for(j=1;j<=i;j++){
+      printf("%d ",count);
+      count++;
+      
+    }
+    printf("\n");
+    
+  }
+  return 0;
 }
